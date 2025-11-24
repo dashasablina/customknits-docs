@@ -1,0 +1,70 @@
+/**
+ * CustomKnits Docs — нейтральная серая тема
+ * Чёрно-белая палитра с небольшими оттенками серого.
+ */
+
+:root {
+  /* Чёрно-белая палитра */
+  --ifm-color-primary: #444444;
+  --ifm-color-primary-dark: #333333;
+  --ifm-color-primary-darker: #2a2a2a;
+  --ifm-color-primary-darkest: #1f1f1f;
+
+  --ifm-color-primary-light: #555555;
+  --ifm-color-primary-lighter: #666666;
+  --ifm-color-primary-lightest: #777777;
+
+  /* Нейтральный текст */
+  --ifm-font-color-base: #111111;
+
+  /* Линии и бордеры */
+  --ifm-color-emphasis-300: #cccccc;
+  --ifm-color-emphasis-200: #e0e0e0;
+
+  /* Размер кода */
+  --ifm-code-font-size: 95%;
+
+  /* Подсветка строк кода */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.08);
+}
+
+/* Тёмная тема — мягкие серые вместо ярких цветов */
+[data-theme='dark'] {
+  --ifm-color-primary: #cccccc;
+  --ifm-color-primary-dark: #bbbbbb;
+  --ifm-color-primary-darker: #aaaaaa;
+  --ifm-color-primary-darkest: #999999;
+
+  --ifm-color-primary-light: #d6d6d6;
+  --ifm-color-primary-lighter: #e0e0e0;
+  --ifm-color-primary-lightest: #eeeeee;
+
+  --ifm-font-color-base: #f5f5f5;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+}
+
+/* Чтобы геро-баннер не был кислотным */
+.hero--primary {
+  background: linear-gradient(180deg, #eeeeee, #dddddd);
+  color: #000;
+}
+
+[data-theme='dark'] .hero--primary {
+  background: linear-gradient(180deg, #333333, #222222);
+  color: #fff;
+}
+
+/* Мягкие кнопки */
+.button {
+  border-radius: 6px;
+}
+
+/* Убираем зелёные hover-эффекты */
+a {
+  color: var(--ifm-color-primary-lightest);
+}
+
+.navbar__title {
+  font-weight: 600;
+}
