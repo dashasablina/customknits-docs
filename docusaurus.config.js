@@ -16,7 +16,12 @@ const config = {
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   i18n: {
     defaultLocale: 'ru',
@@ -30,7 +35,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
         },
-        blog: false, // выключаем блог полностью
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -47,7 +52,7 @@ const config = {
       title: 'CustomKnits Docs',
       logo: {
         alt: 'CustomKnits Logo',
-        src: 'img/logo2.png', // заглушка, можно заменить позже
+        src: 'img/logo2.png',
       },
       items: [
         {
