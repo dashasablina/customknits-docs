@@ -23,9 +23,10 @@ const config = {
     },
   },
 
+  // 👇 Добавляем английский язык, но сайт продолжает работать только на русском
   i18n: {
     defaultLocale: 'ru',
-    locales: ['ru'],
+    locales: ['ru', 'en'], // en появится позже, когда создашь /i18n/en
   },
 
   presets: [
@@ -57,7 +58,7 @@ const config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Документация',
         },
@@ -68,17 +69,11 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: 'Разделы',
-          items: [
-            { label: 'Документация', to: '/docs/intro' },
-          ],
-        },
-        {
-          title: 'Проект',
+          title: 'Перейти в редактор',
           items: [
             {
               label: 'CustomKnits',
-              href: 'https://customknits.ru',
+              href: 'https://app.customknits.ru',
             },
           ],
         },

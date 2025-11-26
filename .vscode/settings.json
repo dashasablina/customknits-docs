@@ -1,0 +1,20 @@
+{
+    "folder-color.pathColors": [
+        {
+            "folderPath": "customknits_docs/docs/technical/",
+            "color": "foldercolorizer.color_6600ff"
+        },
+        {
+            "folderPath": "customknits_docs/docs/whatsnew/",
+            "color": "foldercolorizer.color_6600ff"
+        },
+        {
+            "folderPath": "customknits_docs/docs/export/",
+            "color": "foldercolorizer.color_6600ff"
+        },
+        {
+            "folderPath": "customknits_docs/docs/general/",
+            "color": "foldercolorizer.color_6600ff"
+        }
+    ]
+}
